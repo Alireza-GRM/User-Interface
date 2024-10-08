@@ -1,0 +1,87 @@
+.container-custom {
+    max-width: 900px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.form-container {
+    padding: 50px;
+}
+
+.form-container h1 {
+    font-weight: bold;
+}
+
+.form-container input {
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius: 25px;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+}
+
+.form-container button {
+    border-radius: 25px;
+    height: 40px;
+    font-weight: bold;
+    background-color: #02caac;
+    color: white;
+}
+
+.form-container button:hover {
+    background-color: #279e8c;
+    color: white;
+}
+
+.social-icons {
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #146d60;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+    width: 40px;
+    height: 40px;
+}
+
+.toggle-panel {
+    background: linear-gradient(to right, #02caac, #279e8c);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.toggle-panel h1 {
+    font-weight: normal;
+}
+
+.toggle-panel p {
+    margin: 20px 0;
+}
+
+.toggle-panel a {
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 30px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .toggle-panel {
+        border-radius: 0;
+    }
+}

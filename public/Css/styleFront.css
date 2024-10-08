@@ -1,0 +1,249 @@
+:root{
+  --teal: #02caac;
+  --teal-hover: #279e8c;
+}
+
+@font-face {
+  font-family: 'Sans';
+  src: url('../Fonts/Mikhak-VF.eot');
+  src: url('../Fonts/Mikhak-VF.eot?#iefix') format('FontName-opentype'),
+        url('../Fonts/Mikhak-VF.woff') format('woff'),
+        url('../Fonts/Mikhak-VF.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'light';
+  src: url('../Fonts/Mikhak-light.eot');
+  src: url('../Fonts/Mikhak-light.eot?#iefix') format('FontName-opentype'),
+        url('../Fonts/Mikhak-light.woff') format('woff'),
+        url('../Fonts/Mikhak-light.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HotelName';
+  src: url('../Fonts/HamisheRegular.eot');
+  src: url('../Fonts/HamisheRegular.eot?#iefix') format('FontName-opentype'),
+        url('../Fonts/HamisheRegular.woff') format('woff'),
+        url('../Fonts/HamisheRegular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+*{font-family: 'Sans';}
+
+.HotelName{
+  font-family: 'HotelName';
+  font-size: 28px;
+}
+
+.light{
+  font-family: 'light';
+}
+
+.TextRTL{
+  text-align: right;
+  direction: rtl;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9;
+  display: none;
+}
+
+#overlay.active {
+  display: block;
+}
+
+.login-nav{
+  font-size: 13px;
+  border: 1px solid #cdcdcd; 
+}
+
+.login-nav:hover{ 
+  background-color: #02caac;
+  color: white;
+}
+
+.register-nav{
+  font-size: 13px;
+  background-color: #02caac;
+  border: 1px solid #cdcdcd; 
+}
+
+.register-nav:hover{
+  background-color: #279e8c;
+  color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: 'textfield';
+}
+
+.border{
+  width: 100%;
+  height: 380px;
+  border-radius: 10px;
+  border-color: rgb(255, 255, 255);
+}
+
+.custom-bg{
+  background-color: var(--teal);
+  border: 1px solid var(--teal);
+}
+
+.custom-bg:hover{
+  background-color: var(--teal-hover);
+  border-color: 1px solid var(--teal-hover);
+}
+
+.border-nav{
+  width: 97%;
+  height: 80px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(233, 233, 233) !important;
+  border-width: 3px;
+}
+
+@media screen and (max-width: 575px){
+  .border-nav{
+    width: 95%;
+    height: 80px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(233, 233, 233);
+    border-width: 3px;
+  }
+}
+
+.availability-form{
+  margin-top: -60px;
+  z-index: 2;
+  position: relative;
+}
+
+@media screen and (max-width: 575px){
+  .availability-form{
+    margin-top: 0px;
+    padding: 0 35px;
+  }
+}
+
+.Home-pic{
+  width: 100%;
+  height: 380px;
+}
+
+@media screen and (max-width: 575px){
+  .Home-pic{
+    width: 100%;
+    height: 250px;
+  }
+}
+
+.menu-width{
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(224, 224, 224);
+  border-width: 5px;
+}
+
+.border-madrak{
+  border: 3px solid rgb(160, 160, 160);
+}
+
+.h-line{
+  width: 250px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 950px){
+  .line-menu{
+    width: 200px;
+    height: 1px;
+    margin: 0 auto;
+  }
+}
+
+.menu-btn-items{
+  margin: auto; 
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 950px){
+  .menu-btn-items{
+    margin-right: 25px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .menu-txt-items{
+    margin-right: -20px;
+  }
+}
+/* 575px */
+/* 860px */
+@media screen and (min-width: 950px){
+  .hidden-developed{
+    display: none;
+  }
+}
+
+.site-info, .useful-links, .guide-links, .newsletter-form, .copyright-info {
+  order: initial;
+  text-align: left;
+}
+
+/* تنظیمات برای موبایل */
+@media (max-width: 768px) {
+  .site-info {
+    order: 1;
+    text-align: center;
+  }
+  .useful-links {
+    order: 2;
+    margin-top: 20px;
+    /* text-align: center; */
+    padding-right: 20px;
+  }
+  .guide-links {
+    order: 2;
+    margin-top: 20px;
+    /* text-align: center; */
+    padding-right: 20px;
+  }
+  .newsletter-form {
+    order: 3;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .copyright-info {
+    order: 4;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.imgENamad {
+  width: 90px;
+  height: 90px;
+}
